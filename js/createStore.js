@@ -1,4 +1,4 @@
-let store = createStore();
+let store = createStore(reducer);
 let button = document.getElementById('button');
 
 button.addEventListener('click', function() {
@@ -6,7 +6,7 @@ button.addEventListener('click', function() {
 })
 
 
-function createStore() {
+function createStore(reducer) {
   let state;
 
   function getState() {
